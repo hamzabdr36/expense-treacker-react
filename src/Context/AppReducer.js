@@ -1,4 +1,4 @@
-export default (state, action) => {
+const fn = (state, action) => {
     switch(action.type){
 
         case 'DELETE_TRANSACTION':
@@ -15,4 +15,5 @@ export default (state, action) => {
         default:
             return state;
     }
-}
+} 
+export default fn;
